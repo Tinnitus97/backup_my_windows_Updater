@@ -1,12 +1,12 @@
 @ Echo off
 TITLE DASI-Skript Updatecheck
 curl -s -o newversion.txt https://raw.githubusercontent.com/Tinnitus97/backup_my_windows_Updater/refs/heads/main/newversion.txt > nul
-set /p Version=<Version.txt
+set /p Version=<Versionscheck\Version.txt
 set Version=%Version: =%%
 set /p newversion=<newversion.txt
 set newversion=%newversion: =%%
 del newversion.txt
-set /p Build=<Build.txt
+set /p Build=<Versionscheck\Build.txt
 set Build=%Build: =% 
 if "%Version%" LSS "%newversion%" goto updateverfuegbar
 if "%Version%" GEQ "%newversion%" goto keinupdateverfuegbar
