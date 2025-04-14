@@ -57,4 +57,3 @@ goto Start
 :Start
 :: Hier startet dein eigentliches DASI-Skript (optional)
 echo Starte DASI-Skript...
-pause
