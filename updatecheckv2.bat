@@ -51,7 +51,7 @@ goto Start
 
 :: === KEIN UPDATE ===
 :keinupdateverfuegbar
-echo DASI-Skript ist aktuell! [!Version!]
+echo DASI-Skript ist aktuell. [!Version!]
 goto Start
 
 :Start
